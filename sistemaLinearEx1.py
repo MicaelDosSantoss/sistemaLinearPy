@@ -13,8 +13,8 @@ detAx = np.linalg.det(Ax)
 # codigo para ver se o sistema é possível ou não
 
 if detA != 0:
-    result = np.linalg.resultolve(a,b)
-    print(f"resultISTEMA POSSIVEL DETERMINADO - {result}")
+    result = np.linalg.solve(a,b)
+    print(f"SISTEMA POSSIVEL DETERMINADO - {result}")
 # f para incoporar valor a uma variavel {}
 else:
     if detA ==0 and detAx ==0:

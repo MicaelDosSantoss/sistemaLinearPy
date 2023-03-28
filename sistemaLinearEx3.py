@@ -10,9 +10,9 @@ detX = np.linalg.det(aX)
 
 if detA != 0:
     result = np.linalg.solve(a,b)
-    print(f'Sistema possível {result}')
+    print(f'Sistema possível e determinado {result}')
 else:
     if detA == 0 and detX == 0:
-        print('Sistema possível e determinado')
+        print('Sistema possível e indeterminado')
     else:
         print('Sistema impossível')
